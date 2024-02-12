@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,19 +8,32 @@
     <title>IMC</title>
 </head>
 
-<body>
-    <div>ITEM 1</div>
-    <div class="flex flex-column">
-        <div>ITEM 2.1</div>
-        <div>ITEM 2.2</div>
-        <div>ITEM 2.3</div>
-    </div>
-    <div>
-        <input class="input" type="text" />
-    </div>
-    <div>ITEM 4</div>
-    <div>ITEM 5</div>
-    <div>ITEM 6</div>
+<body class="page_main white">  
+    <head>
+        <div class="logo"><img src="/assets/icon-no-bg.png" alt="IMC" srcset=""></div> 
+    </head>
+    <main>
+        <h1 class="page_title">Cálculo de IMC</h1>
+        <div class="data_in">
+            <span class="inputs">
+                <input type="number" name="" id="in_altura" placeholder="Altura">
+                <input type="number" name="" id="in_peso" placeholder="Peso">            
+            </span>
+            <select name="" id="in_sexo">
+                <option value="" disabled selected>Sexo</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <label class="in_check">
+                <input type="checkbox" name="age" id="in_65">
+                Eu tenho 65 anos ou mais
+            </label>
+        </div>
+        <div class="btn_area">
+            <button class="primary">Calcular meu IMC</button>
+            <button>Entenda o cálculo</button>
+        </div>
+    </main>
 </body>
 
 </html>
